@@ -3,6 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "developer": {
+    "name": "Salar Ahmed Memon",
+    "phone_number": "+92 3110220369",
+    "email": "salarahmedmemon58@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/salar58/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
