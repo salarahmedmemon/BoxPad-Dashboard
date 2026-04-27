@@ -106,14 +106,18 @@ function App() {
     <div className="w-full h-screen p-[5.61px] bg-gray-50 flex flex-col">
       {/* Header */}
       <div className="w-full h-[39.3px] flex items-center justify-between bg-white rounded-[11.23px] px-[11.23px] py-[7.02px] shrink-0">
-        <div className="w-full h-full flex gap-2 items-center">
+        <div className="w-full h-full flex gap-2 items-center justify-between lg:justify-start">
           {/* Hamburger – visible only on mobile */}
           {isMobile && (
             <button
               className="lg:hidden mr-1"
               onClick={() => setShowSidebar(true)}
             >
-              <img src="/assets/img/hamburger.svg" alt="menu" className="w-6 h-6" />
+              <span className="block w-[20px] flex flex-col items-center justify-center gap-1">
+                <div className="w-full h-[2px] bg-black"></div>
+                <div className="w-full h-[2px] bg-black"></div>
+                <div className="w-full h-[2px] bg-black"></div>
+              </span>
             </button>
           )}
 
@@ -142,7 +146,7 @@ function App() {
           </div>
         </div>
 
-        <div className="h-full flex items-center gap-2 shrink-0">
+        <div className="hidden h-full lg:flex items-center gap-2 shrink-0">
           <div className="h-[25.26px] flex items-center justify-center">
             <img src="/assets/img/setting.svg" alt="setting icon" className="w-5 h-5" />
           </div>
